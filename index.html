@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+       <img src="https://www.blogson.com.br/wp-content/uploads/2017/10/lg.progress-bar-preloader.gif" alt="">
+        
+    </div>
+    <h1>Consumindo API VIA CEP</h1>
+    <form action="" id="form">
+        <div>
+            <label for=""> Nome </label>
+            <input type="text" name="" id="nome">
+        </div>
+
+        <div>
+            <label for=""> Email </label>
+            <input type="text" name="" id="email">
+        </div>
+
+        <div>
+            <label for=""> CEP </label>
+            <input type="text" name="" id="cep" minlength="8" maxlength="8">
+            <span id="erro"></span>
+        </div>
+
+        <div>
+            <label for=""> Logradouro </label>
+            <input type="text" name="" id="logradouro" readonly>
+        </div>
+
+        <div>
+            <label for=""> Bairro </label>
+            <input type="text" name="" id="bairro" readonly>
+        </div>
+
+        <div>
+            <label for=""> Localidade </label>
+            <input type="text" name="" id="localidade" readonly>
+        </div>
+
+        <div>
+            <label for=""> UF </label>
+            <input type="text" name="" id="uf" readonly>
+        </div>
+       
+    </form>
+   
+</body>
+</html>

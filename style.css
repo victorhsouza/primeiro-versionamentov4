@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: var(--fonte-principal);
+}
+:root{
+    --fonte-principal: 'Permanent Marker', cursive;
+    --cor-escura: #252B48;
+    --cor-mais-clara: #7186b37c;
+}
+
+body{
+    background-color: var(--cor-escura);
+    background-image: url("https://w.forfun.com/fetch/87/878f056254368afba2656e6558168d95.jpeg");
+    background-position-y: top;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+form{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.643);
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    width: 600px;
+    margin: 2rem auto;
+    background-color:var(--cor-mais-clara) ;
+    z-index: 2;
+}
+
+input{
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius:5px; 
+}
+label{
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.585);
+    color: #f5011b;
+    font-weight: bolder;
+    
+}
+
+#erro{
+    color: red;
+    text-shadow: 2px 2px 2px  white;
+}
+
+/* Estilizando modal */
+
+#fade, #modal{
+    opacity: 1;
+    transition: .5s;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+}
+
+#modal{
+    padding: 50px;
+    background-color:#fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 50vh;
+    border-radius: 20px;
+    
+}
+
+#modal input,button{
+    padding: 20px;
+    margin: 1em 0;
+    width: 100%;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+}
+#modal input{
+    border-bottom: 1px solid black;
+}
+
+#modal button{
+    background-color: var(--cor-fonte);
+    cursor: pointer;
+    opacity: .9;
+    font-size: larger;
+    color: #fff;
+}
+
+#modal button:hover{
+    opacity: 1;
+}
+
+#modal.hide, #fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top:0;
+}
