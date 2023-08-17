@@ -13,11 +13,11 @@
 
 body{
     background-color: var(--cor-escura);
-    background-image: url("https://w.forfun.com/fetch/87/878f056254368afba2656e6558168d95.jpeg");
+    background-image: url("https://img.freepik.com/vetores-premium/ilustracao-de-teia-de-aranha-vector-teia-de-aranha-modelo-para-seu-projeto_97886-12781.jpg?w=360");
     background-position-y: top;
     background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: repeat;
 
 }
 
@@ -29,12 +29,17 @@ h1{
 form{
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.643);
-    height: 350px;
+    height: 75vh;
+    min-height: 600px;
+    max-height: 640px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
-    width: 600px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+
     margin: 2rem auto;
     background-color:var(--cor-mais-clara) ;
     z-index: 2;
